@@ -1,13 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int x,y=0;
-    printf("Enter a number : ");
-    scanf("%d",&x);
-    while(x!=0)
+    int x=10,y,a=0;
+    while(x<100)
     {
-        x=x/10;
-        y++;
+        if(x%2!=0)
+        {
+        y=(x/10);
+        if(y==7)
+        {
+        a=a+x;
     }
-    printf("%d",y);
+}
+        x++;
+    }
+    printf("%d",a);
 }

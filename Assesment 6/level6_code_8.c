@@ -1,15 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int x=10,y,a=0;
+    int x=10,y,z;
     while(x<100)
     {
-        y=x%10;
-        if(y==5)
+        if(x%2==0)
         {
-        a=a+x;
+        y=x%10;
+        z=x/10;
+        if(y+z==6)
+        {
+            printf("%d\n",x);
+        }
     }
         x++;
     }
-    printf("%d",a);
 }
