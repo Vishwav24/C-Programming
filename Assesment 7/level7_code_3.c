@@ -5,13 +5,13 @@ int main()
     int x=1;
     disp_sum(x);
 }
-void disp_sum(int x)
+void disp_sum(int z)
 {
     int y=0;
-    while(x<=5)
+    while(z<=5)
     {
-        y=y+x;
-        x++;
+        y=y+z;
+        z++;
     }
     printf("%d",y);
 }
