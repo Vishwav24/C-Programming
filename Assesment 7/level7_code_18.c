@@ -1,14 +1,14 @@
 #include<stdio.h>
-int disp_interchange_first_last_digit(int, int );
+int check_first_2digits_prime(int, int );
 int main()
 {
     int x,y;
     printf("Enter a number : ");
     scanf("%d",&x);
     y=x%100;
-    disp_interchange_first_last_digit(x,y);
+    check_first_2digits_prime(x,y);
 }
-int disp_interchange_first_last_digit(int x,int h)
+int check_first_2digits_prime(int x,int h)
 {
     int z=0;
         while(h!=x)

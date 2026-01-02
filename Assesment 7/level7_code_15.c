@@ -1,5 +1,5 @@
 #include<stdio.h>
-int disp_interchange_first_last_digit(int,int,int );
+int check_last_digit_odd(int,int,int );
 int main()
 {
     int x,y,z,l;
@@ -7,9 +7,9 @@ int main()
     scanf("%d",&x);
     y=x%10;
     z=x;
-    disp_interchange_first_last_digit(x,y,z);
+    check_last_digit_odd(x,y,z);
 }
-int disp_interchange_first_last_digit(int x,int h,int z)
+int check_last_digit_odd(int x,int h,int z)
 {
     int a,b,c,d;
     if(h%2!=0)
