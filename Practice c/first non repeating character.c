@@ -7,25 +7,27 @@ int main()
     a[strcspn(a,"\n")]='\0';
     int l=strlen(a),flag=1;
     for(int i=0;i<l;i++)
-        {  
-            flag=1;
-        for(int j=0;j<l;j++)
-        {  
-            if(i==j)
-            {
-                continue;
-            }
-            if(a[i]==a[j])
-            {  
-                flag=0;
-                break;
-            }
-            
-        }
-        if(flag==1)
+      {
+        flag=1;
+        if(a[i]!='\0')
         {
-            printf("%c",a[i]);
-            return 0;
+        for(int j=i+1;j<l;j++)
+        {
+            if(a[i]==a[j])
+            {
+                a[j]='\0';
+                flag=0;
+            }
         }
+    if(flag==1)
+    {
+        printf("%c",a[i]);
+        break;
     }
+}
+else
+{
+    continue;
+}
+      }
 }
